@@ -10,6 +10,7 @@ function saveValue() {
   ).innerHTML += `${exercise}: ${sets}세트 ${reps}회 (${weight} kg)`+'<br>');
 
   
+  
 }
 
 

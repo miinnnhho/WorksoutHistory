@@ -10,6 +10,13 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://kit.fontawesome.com/f9526759ee.js" crossorigin="anonymous"></script>
+
+
 
 
 
@@ -18,32 +25,36 @@
 <body>
     <div class="main">
         <h2>오.운.완</h2>
-        <!-- 기록 작성 -->
-        <form>
-            <label for="exercise">운동 종류:</label>
-            <input type="text" id="exercise" name="exercise" required>
-            <label for="sets">세트 수:</label>
-            <input type="number" id="sets" name="sets" required>
-            <label for="reps">반복 수:</label>
-            <input type="number" id="reps" name="reps" required>
-            <label for="weight">무게:</label>
-            <input type="number" id="weight" name="weight" required>
-            <button type="button" onclick="saveValue()">기록 저장</button>
-            <!-- 결과 출력 -->
-            
-        </form>
+    </div>
+    <!-- 기록 작성 -->
+    <form>
+        <label for="exercise">운동 종류:</label>
+        <input type="text" id="exercise" name="exercise" required>
+        <label for="sets">세트 수:</label>
+        <input type="number" id="sets" name="sets" required>
+        <label for="reps">반복 수:</label>
+        <input type="number" id="reps" name="reps" required>
+        <label for="weight">무게:</label>
+        <input type="number" id="weight" name="weight" required>
+        <button type="button" onclick="saveValue()">기록 저장</button>
+    </form>
 
-       
 
-        <div>
-            <div class="my-box">
-                <script src="date.js"></script>
-                <br>운동 기록
-                <p id="result"></p>
-            </div>
 
+
+    <!-- 결과 -->
+    <div>
+        <div class="my-box">
+            <script src="date.js"></script>
+            <br>운동 기록💪
+            <p id="result"></p>
         </div>
+    </div>
+
+
+
 </body>
 <script src="save.js"></script>
+<script src="calendar2.js"></script>
 
 </html>
