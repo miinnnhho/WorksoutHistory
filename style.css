@@ -20,7 +20,7 @@ form {
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
-    
+
 }
 
 
@@ -66,20 +66,40 @@ button:hover {
     float: center;
 }
 
-html, body {
+html,
+body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-  }
-  
-  *, *:before, *:after {
+}
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
-  }
-  .clearfix:after {
+}
+
+.clearfix:after {
     content: '';
     display: block;
     clear: both;
     float: none;
-  }
-  
+}
 
+.CalendarLocation {
+    margin-top: 30px;
+}
+#calendar {
+    
+    width: 550px;
+    height: 550px;
+    float: left;
+    margin-right: 30px;
+}
+
+.CalendarResultBox {
+    border: 1px solid;
+    width: 550px;
+    height: 550px;
+    float: left;
+}

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Health</title>
+    <title>ownan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -15,47 +15,54 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="https://kit.fontawesome.com/f9526759ee.js" crossorigin="anonymous"></script>
-
-
-
+    <link rel="apple-touch-icon" href="apple-icon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="apple-icon.png">
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js'></script> <!-- fullcalendar -->
 
 
 </head>
 
 <body>
-    <div class="main">
-        <h2>오.운.완</h2>
-    </div>
-    <hr>
-    <!-- 기록 작성 -->
-    <form>
-        <label for="exercise">운동 종류:</label>
-        <input type="text" id="exercise" name="exercise" required>
-        <label for="sets">세트 수:</label>
-        <input type="number" id="sets" name="sets" required>
-        <label for="reps">반복 수:</label>
-        <input type="number" id="reps" name="reps" required>
-        <label for="weight">무게:</label>
-        <input type="number" id="weight" name="weight" required>
-        <button type="button" onclick="saveValue()">기록 저장</button>
-    </form>
-
-
-
-
-    <!-- 결과 -->
-    <div>
-        <div class="my-box">
-            <script src="date.js"></script>
-            <br>운동 기록💪
-            <p id="result"></p>
+    <section>
+        <div class="main">
+            <h2>오.운.완</h2>
         </div>
-    </div>
+        <hr>
+        <!-- 기록 작성 -->
+        <form>
+            <label for="exercise">운동 종류:</label>
+            <input type="text" id="exercise" name="exercise" required>
+            <label for="sets">세트 수:</label>
+            <input type="number" id="sets" name="sets" required>
+            <label for="reps">반복 수:</label>
+            <input type="number" id="reps" name="reps" required>
+            <label for="weight">무게:</label>
+            <input type="number" id="weight" name="weight" required>
+            <button type="button" onclick="saveValue()">기록 저장</button>
+        </form>
+        <!-- 결과(정보저장) -->
+        <div>
+            <div class="my-box">
+                <script src="TodayDate.js"></script>
+                <br>운동 기록💪
+                <p id="result"></p>
+            </div>
+        </div>
+    </section>
+    <!-- 2번째 section 캘린더 및 이전 기록 송출 -->
+    <section>
+        <div class="CalendarLocation">
+            <div id="calendar"></div>
+            <div class="CalendarResultBox"></div>
+        </div>
+    </section>
 
 
 
 </body>
+<!-- 정보저장 -->
 <script src="save.js"></script>
-<script src="calendar2.js"></script>
+<!-- 캘린더 -->
+<script src="Fullcalendar.js"></script>
 
 </html>
